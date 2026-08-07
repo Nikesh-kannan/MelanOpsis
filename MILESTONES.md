@@ -14,7 +14,7 @@ https://t4g.gdgcbe.com/milestones
 
 ## Before Saturday
 
-- [ ] Every member can open this repo and push to it <!--m:pre-repo-->
+- [x] Every member can open this repo and push to it <!--m:pre-repo-->
 - [ ] Anyone under 18 has a guardian consent form submitted <!--m:pre-consent-->
 - [ ] Scaffolding runs on every member’s machine — repo, framework, keys, a hello-world <!--m:pre-scaffold-->
 - [ ] One conversation with a real user of our problem, written down in this repo <!--m:pre-user-->
