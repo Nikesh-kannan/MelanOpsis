@@ -29,26 +29,7 @@ Powered by a fine-tuned **PyTorch EfficientNet-B0 Deep Neural Network** trained 
 - **Patient Case Log Registry**: Filterable, searchable case history log persisted locally in SQLite with original image uploads, timestamps, patient IDs, and triage decisions.
 - **Analytics Dashboard**: Real-time KPI summary cards (Total Screened, High-Risk Referral %, Processing Speed) and an interactive 7-day screening volume chart powered by Recharts.
 
----
 
-## 📊 Model Performance Benchmarks (1,188 Held-Out Test Images)
-
-The model was evaluated on a stratified 20% test split from **11,879 skin lesion images** (6,289 Benign Moles vs 5,590 Malignant Melanomas):
-
-| Clinical Metric | Score | Significance |
-| :--- | :--- | :--- |
-| **Overall Test Accuracy** | **90.74%** | Exceptional overall classification performance |
-| **AUC-ROC Score** | **0.9726** | Clinical-grade discrimination capability |
-| **Sensitivity (Recall)** | **90.88%** | High detection rate on true malignant melanoma cases |
-| **Specificity (Precision)** | **90.62%** | Low false-alarm rate on true benign moles |
-| **F1-Score** | **0.9023** | Well-balanced harmonic mean precision/recall |
-
-### Confusion Matrix on Test Set:
-```text
-                  Predicted Benign (0)   Predicted Malignant (1)
-True Benign (0)            570 (TN)                 59 (FP)
-True Malignant (1)          51 (FN)                508 (TP)
-```
 
 ---
 
