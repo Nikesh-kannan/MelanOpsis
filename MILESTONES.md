@@ -24,10 +24,10 @@ https://t4g.gdgcbe.com/milestones
 
 - [x] 1:00 PM — architecture decided and in the README, and a commit from every member <!--m:sat-arch-->
 - [x] 5:00 PM — the core path works end to end on one happy input <!--m:sat-core-->
-- [ ] 5:00 PM — we can say in one sentence what our tool does when it is not sure <!--m:sat-unsure-->
-- [ ] 7:00 PM — talked to a mentor, wrote down what they said, and dropped something <!--m:sat-mentor-->
-- [ ] Midnight — the hard part works, on twenty real records rather than our three examples <!--m:sat-hard-->
-- [ ] Midnight — everything is pushed. Nobody’s work exists only on a laptop <!--m:sat-pushed-->
+- [x] 5:00 PM — we can say in one sentence what our tool does when it is not sure <!--m:sat-unsure-->
+- [x] 7:00 PM — talked to a mentor, wrote down what they said, and dropped something <!--m:sat-mentor-->
+- [x] Midnight — the hard part works, on twenty real records rather than our three examples <!--m:sat-hard-->
+- [x] Midnight — everything is pushed. Nobody’s work exists only on a laptop <!--m:sat-pushed-->
 
 ## Sunday
 
