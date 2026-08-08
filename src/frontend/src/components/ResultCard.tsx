@@ -149,7 +149,7 @@ export default function ResultCard({ analysis, originalImageSrc, onReset, onLogg
                     activeTab === 'gradcam' ? 'bg-blue-600 text-white shadow-xs font-bold' : 'text-slate-500 hover:text-slate-800'
                   }`}
                 >
-                  Grad-CAM 🔥
+                  Grad-CAM
                 </button>
               </div>
             )}
