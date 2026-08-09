@@ -133,7 +133,7 @@ async def generate_pdf_report(
         leading=14,
         textColor=colors.HexColor('#475569')
     )
-    story.append(Paragraph("DermScan AI — Clinical Lesion Triage Report", title_style))
+    story.append(Paragraph("MelanOpsis AI — Clinical Lesion Triage Report", title_style))
     story.append(Paragraph("Open Source AI Decision Support Platform | Tele-Dermatology Referral Slip", subtitle_style))
     story.append(Spacer(1, 15))
 
@@ -186,10 +186,10 @@ async def generate_pdf_report(
     story.append(Spacer(1, 15))
 
     disc_style = ParagraphStyle('DiscStyle', parent=styles['Normal'], fontName='Helvetica-Oblique', fontSize=8, leading=11, textColor=colors.HexColor('#64748B'))
-    story.append(Paragraph("<b>Medical Disclaimer:</b> DermScan AI is a clinical decision support tool designed for triage assistance, not definitive diagnosis. Final clinical management must follow registered medical officer evaluation.", disc_style))
+    story.append(Paragraph("<b>Medical Disclaimer:</b> MelanOpsis AI is a clinical decision support tool designed for triage assistance, not definitive diagnosis. Final clinical management must follow registered medical officer evaluation.", disc_style))
 
     doc.build(story)
     pdf_bytes = buffer.getvalue()
     buffer.close()
 
-    return Response(content=pdf_bytes, media_type="application/pdf", headers={"Content-Disposition": f"attachment; filename=DermScan_Report_{case_id[:8]}.pdf"})
+    return Response(content=pdf_bytes, media_type="application/pdf", headers={"Content-Disposition": f"attachment; filename=MelanOpsis_Report_{case_id[:8]}.pdf"})

@@ -37,7 +37,7 @@ export default function Navbar() {
               </div>
               <div>
                 <div className="flex items-center space-x-1.5">
-                  <span className="text-xl font-bold tracking-tight text-slate-900 font-sans">DermScan</span>
+                  <span className="text-xl font-bold tracking-tight text-slate-900 font-sans">MelanOpsis</span>
                   <span className="text-xs font-semibold px-1.5 py-0.5 rounded bg-blue-100 text-blue-800 uppercase tracking-wider">AI</span>
                 </div>
                 <p className="text-[11px] font-medium text-slate-500 hidden sm:block">Open Clinical Decision Support Platform</p>

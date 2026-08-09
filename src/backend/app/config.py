@@ -32,11 +32,12 @@ IMAGES_DIR.mkdir(parents=True, exist_ok=True)
 (BASE_DIR / "models").mkdir(parents=True, exist_ok=True)
 
 # Application settings
-APP_NAME = "DermScanI API"
+APP_NAME = "MelanOpsis API"
 VERSION = "1.0.0"
 CORS_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    "https://melanopsis-frontend-j7m42ragq-sais-projects-a1ae0dbb.vercel.app",
     "*"
 ]
 

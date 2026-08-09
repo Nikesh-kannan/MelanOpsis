@@ -23,7 +23,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(
     title=APP_NAME,
     version=VERSION,
-    description="Backend service for DermScanI AI-assisted skin lesion triage.",
+    description="Backend service for MelanOpsis AI-assisted skin lesion triage.",
     lifespan=lifespan
 )
 
