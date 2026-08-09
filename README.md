@@ -10,7 +10,7 @@
 
 **MelanOpsis AI** is a clinical-grade AI decision support and automated lesion triage web application designed for primary healthcare workers, tele-dermatologists, and community health officers. 
 
-Powered by a fine-tuned **PyTorch EfficientNet-B0 Deep Neural Network** trained on **11,879 skin lesion images** and an **OpenCV ABCDE Dermatoscopic Feature Extraction Pipeline**, DermScan AI accurately differentiates **Benign Moles (Nevi)** from **Malignant Melanoma Cancer** with high clinical precision.
+Powered by a fine-tuned **PyTorch EfficientNet-B0 Deep Neural Network** trained on **11,879 skin lesion images** and an **OpenCV ABCDE Dermatoscopic Feature Extraction Pipeline**, MelanOpsis accurately differentiates **Benign Moles (Nevi)** from **Malignant Melanoma Cancer** with high clinical precision.
 
 ---
 
@@ -28,8 +28,6 @@ Powered by a fine-tuned **PyTorch EfficientNet-B0 Deep Neural Network** trained 
 - **ABCDE Clinical Rule Verification**: Computes intra-lesion color variegation std ($\text{std}_{\text{color}}$), border irregularity, and asymmetry metrics to prevent false positive alarms on uniform single-tone moles.
 - **Patient Case Log Registry**: Filterable, searchable case history log persisted locally in SQLite with original image uploads, timestamps, patient IDs, and triage decisions.
 - **Analytics Dashboard**: Real-time KPI summary cards (Total Screened, High-Risk Referral %, Processing Speed) and an interactive 7-day screening volume chart powered by Recharts.
-
-
 
 ---
 
@@ -51,7 +49,28 @@ Powered by a fine-tuned **PyTorch EfficientNet-B0 Deep Neural Network** trained 
 - **Data Visualization**: Recharts (Interactive screening volume breakdown)
 - **Icons & Effects**: Lucide React Icons & Canvas-Confetti
 
- 
+---
+
+## 📚 Research Literature & References
+
+The design of MelanOpsis’s deep neural network, computer vision preprocessing pipeline, and 3-tier triage thresholds is informed by medical literature and dermatological AI research:
+
+1. **Journal of the American Academy of Dermatology (JAAD)**:  
+   *Deep learning algorithms and clinical accuracy in dermatoscopic skin lesion evaluation.*  
+   🔗 [JAAD Article: Deep Learning in Dermatology Triage](https://www.jaad.org/article/S0190-9622(23)03254-1/abstract)
+
+2. **JAMA Dermatology**:  
+   *Diagnostic accuracy and clinical integration of artificial intelligence for melanoma identification and risk stratification.*  
+   🔗 [JAMA Dermatology Article: AI Diagnostic Accuracy for Melanoma](https://jamanetwork.com/journals/jamadermatology/article-abstract/2812872)
+
+3. **Annals of Oncology (ScienceDirect)**:  
+   *Computer-aided melanoma detection using Convolutional Neural Networks and dermatoscopic feature extraction.*  
+   🔗 [ScienceDirect Article: CNNs & Computer-Aided Diagnosis in Skin Cancer](https://www.sciencedirect.com/science/article/pii/S0923753419579960)
+
+4. **NCBI Bookshelf (StatPearls / NIH)**:  
+   *Melanoma pathology, diagnostic criteria (ABCDE rules), and clinical risk management.*  
+   🔗 [NCBI StatPearls: Melanoma Diagnosis and Management](https://www.ncbi.nlm.nih.gov/books/NBK470409/)
+
 ---
 
 ## 🚀 Quick Setup & Execution Guide
@@ -59,13 +78,34 @@ Powered by a fine-tuned **PyTorch EfficientNet-B0 Deep Neural Network** trained 
 ### Prerequisites
 - **Python**: Version 3.10 or higher
 - **Node.js**: Version 18.0 or higher
-- **CUDA GPU**: Optional (NVIDIA GPU with CUDA 11.8+ / 12.1+ recommended for sub-100ms inference)
+- **CUDA GPU**: Optional (NVIDIA GPU recommended for accelerated inference)
+
+### 1. Backend Setup
+```bash
+cd src/backend
+python -m venv .venv
+# On Windows:
+.venv\Scripts\activate
+# On Linux/macOS:
+# source .venv/bin/activate
+
+pip install -r requirements.txt
+uvicorn app.main:app --reload --port 8000
+```
+
+### 2. Frontend Setup
+```bash
+cd src/frontend
+npm install
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
 
 ## ⚖️ Medical Disclaimer
 
-> **IMPORTANT**: DermScan AI is designed solely as an **AI Clinical Decision Support & Screening Tool** for primary healthcare workers and triage assistance. It is **not** a diagnostic device and should never replace formal clinical evaluation, histopathological biopsy, or specialist dermatological evaluation.
+> **IMPORTANT**: MelanOpsis is designed solely as an **AI Clinical Decision Support & Screening Tool** for primary healthcare workers and triage assistance. It is **not** a diagnostic device and should never replace formal clinical evaluation, histopathological biopsy, or specialist dermatological evaluation.
 
 ---
 

@@ -86,7 +86,7 @@ export default function CapturePage() {
           <AlertCircle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
           <div>
             <strong className="block font-bold">Analysis System Alert</strong>
-            <span>{errorMessage} Make sure the FastAPI backend server is running on port 8000.</span>
+            <span>{errorMessage} Make sure the backend server is running and reachable.</span>
           </div>
         </div>
       )}

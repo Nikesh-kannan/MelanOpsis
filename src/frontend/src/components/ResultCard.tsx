@@ -60,7 +60,8 @@ export default function ResultCard({ analysis, originalImageSrc, onReset, onLogg
 
   const handleExportPDF = async () => {
     try {
-      const res = await fetch(`http://localhost:8000/api/analyze/pdf?case_id=${analysis.case_id}&patient_id=${encodeURIComponent(patientId.trim() || 'PAT-8842')}`, {
+      const apiBase = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+      const res = await fetch(`${apiBase}/api/analyze/pdf?case_id=${analysis.case_id}&patient_id=${encodeURIComponent(patientId.trim() || 'PAT-8842')}`, {
         method: 'POST'
       });
       if (!res.ok) throw new Error('Failed to generate PDF report from server');
@@ -68,7 +69,7 @@ export default function ResultCard({ analysis, originalImageSrc, onReset, onLogg
       const url = window.URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = `DermScan_Report_${analysis.case_id.slice(0, 8)}.pdf`;
+      a.download = `MelanOpsis_Report_${analysis.case_id.slice(0, 8)}.pdf`;
       document.body.appendChild(a);
       a.click();
       a.remove();
@@ -337,7 +338,7 @@ export default function ResultCard({ analysis, originalImageSrc, onReset, onLogg
         <div className="bg-slate-900 text-slate-300 px-6 py-3 border-t border-slate-800 text-[11px] flex items-center space-x-2">
           <ShieldAlert className="h-4 w-4 text-blue-400 shrink-0" />
           <p>
-            <strong className="text-white">Medical Triage Disclaimer:</strong> DermScan AI is an AI clinical decision support tool designed for triage assistance, not definitive diagnosis. Final clinical management must follow local health guidelines and registered medical officer evaluation.
+            <strong className="text-white">Medical Triage Disclaimer:</strong> MelanOpsis is an AI clinical decision support tool designed for triage assistance, not definitive diagnosis. Final clinical management must follow local health guidelines and registered medical officer evaluation.
           </p>
         </div>
 
