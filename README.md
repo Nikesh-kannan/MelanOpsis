@@ -51,8 +51,7 @@ Powered by a fine-tuned **PyTorch EfficientNet-B0 Deep Neural Network** trained 
 - **Data Visualization**: Recharts (Interactive screening volume breakdown)
 - **Icons & Effects**: Lucide React Icons & Canvas-Confetti
 
--
-
+ 
 ---
 
 ## 🚀 Quick Setup & Execution Guide
