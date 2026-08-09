@@ -1,3 +1,13 @@
+---
+title: MelanOpsis AI Backend
+emoji: 🔬
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # MelanOpsis AI - Community Skin Lesion Triage & Referral Platform
 
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.5-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
