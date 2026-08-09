@@ -1,4 +1,4 @@
-# DermScan AI - Community Skin Lesion Triage & Referral Platform
+# MelanOpsis AI - Community Skin Lesion Triage & Referral Platform
 
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.5-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.109-009688?style=flat-square&logo=fastapi&logoColor=white)
@@ -8,7 +8,7 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
 
-**DermScan AI** is a clinical-grade AI decision support and automated lesion triage web application designed for primary healthcare workers, tele-dermatologists, and community health officers. 
+**MelanOpsis AI** is a clinical-grade AI decision support and automated lesion triage web application designed for primary healthcare workers, tele-dermatologists, and community health officers. 
 
 Powered by a fine-tuned **PyTorch EfficientNet-B0 Deep Neural Network** trained on **11,879 skin lesion images** and an **OpenCV ABCDE Dermatoscopic Feature Extraction Pipeline**, DermScan AI accurately differentiates **Benign Moles (Nevi)** from **Malignant Melanoma Cancer** with high clinical precision.
 
